@@ -430,19 +430,50 @@
     <!-- ANDROID -->
     <div class="card" style="border-color:rgba(74,222,128,.4); background:linear-gradient(135deg, rgba(74,222,128,.05), var(--bg-card));">
       <h4>🤖 Android — ready to install</h4>
-      <p class="meta">releases/al-ghirbal-v1.0-debug.apk · 4.1 MB</p>
-      <p>Download and install on any Android phone (API 23+ / Android 6.0+).</p>
-      <p style="margin-top:12px"><strong>Option A — direct from GitHub:</strong></p>
-      <pre class="code" style="font-size:.78em"><span class="cmt"># In your terminal, with phone plugged in via USB:</span>
-<span class="fn">curl</span> -LO https://github.com/abourdim/al-ghirbal-android/raw/main/releases/al-ghirbal-v1.0-debug.apk
+      <p class="meta">al-ghirbal-v1.0-debug.apk · 4.1 MB · Android 6.0+</p>
+
+      <!-- Direct download button -->
+      <a href="https://github.com/abourdim/al-ghirbal-android/releases/download/v1.0-debug/al-ghirbal-v1.0-debug.apk"
+         download
+         style="display:flex; align-items:center; justify-content:center; gap:10px;
+                background:linear-gradient(135deg,#2E7D52,#4FAE7A); color:#fff;
+                padding:14px 18px; border-radius:10px; text-decoration:none;
+                border-bottom:none; font-weight:700; font-size:1rem;
+                margin:16px 0; box-shadow:0 4px 16px rgba(46,125,82,0.35);
+                transition:transform .15s;">
+        <span style="font-size:1.3em">⬇️</span>
+        <span>Download APK directly</span>
+      </a>
+
+      <!-- QR code + instructions side by side -->
+      <div style="display:flex; gap:16px; align-items:center; margin-top:16px;">
+        <!-- QR code -->
+        <div style="flex:0 0 auto;">
+          <div style="background:#fff; padding:8px; border-radius:8px; width:140px; height:140px;">
+            <img src="releases/download-qr.svg" alt="QR code: APK download" style="display:block; width:100%; height:100%;">
+          </div>
+          <p style="color:var(--text-faint); font-size:.72rem; text-align:center; margin:6px 0 0;">scan with phone camera</p>
+        </div>
+
+        <!-- Tap-install instructions -->
+        <div style="flex:1; min-width:0;">
+          <p style="margin:0 0 8px; color:var(--text); font-weight:600; font-size:.95rem;">📱 On the phone</p>
+          <ol style="color:var(--text-dim); font-size:.85rem; margin:0; padding-left:18px; line-height:1.5;">
+            <li>Scan QR or tap the download button above.</li>
+            <li>Open the downloaded <code style="font-size:.85em">.apk</code>.</li>
+            <li>Allow "Install unknown apps" if prompted (one-time).</li>
+            <li>Tap <strong>Install</strong>.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Alt method: adb -->
+      <details style="margin-top:16px;">
+        <summary style="cursor:pointer; color:var(--text-dim); font-size:.85rem;">Alt method — install via <code>adb</code> from a computer</summary>
+        <pre class="code" style="font-size:.78em; margin-top:8px;"><span class="cmt"># Phone plugged in via USB, USB debugging enabled:</span>
+<span class="fn">curl</span> -LO https://github.com/abourdim/al-ghirbal-android/releases/download/v1.0-debug/al-ghirbal-v1.0-debug.apk
 <span class="fn">adb</span> install al-ghirbal-v1.0-debug.apk</pre>
-      <p style="margin-top:12px"><strong>Option B — from the phone's browser:</strong></p>
-      <ol style="color:var(--text-dim); font-size:.92em; margin-left:18px">
-        <li>Enable <em>Developer Options</em>: Settings → About phone → tap <strong>Build number</strong> 7×.</li>
-        <li>Download the APK from the GitHub link above (tap → Download).</li>
-        <li>Open the APK from your Downloads folder. Allow "Install unknown apps" for your file manager.</li>
-        <li>Tap Install. App appears in your launcher as <strong>al-Ghirbal</strong> or <strong>الغربال</strong>.</li>
-      </ol>
+      </details>
     </div>
 
     <!-- iOS -->
