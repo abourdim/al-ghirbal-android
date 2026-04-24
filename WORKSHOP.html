@@ -400,6 +400,7 @@
 <div class="toc">
   <h3>Contents</h3>
   <ol>
+    <li><a href="#try-it" style="color:var(--amber)"><strong>Try it now — install al-Ghirbal</strong></a></li>
     <li><a href="#overview">Overview &amp; what was built</a></li>
     <li><a href="#architecture">Architecture diagram</a></li>
     <li><a href="#phases">Phases of the work</a></li>
@@ -415,6 +416,52 @@
     <li><a href="#glossary">Glossary for kids</a></li>
   </ol>
 </div>
+
+<!-- ======================================================== TRY IT NOW -->
+<section id="try-it">
+  <h2><span class="num" style="color:var(--ok)">▶</span>Try it now — install al-Ghirbal</h2>
+  <p class="lede">
+    Want to see the app on your phone before reading anything else? Grab the installable
+    build from the <a href="https://github.com/abourdim/al-ghirbal-android/tree/main/releases">releases/</a> folder.
+  </p>
+
+  <div class="grid grid-2">
+
+    <!-- ANDROID -->
+    <div class="card" style="border-color:rgba(74,222,128,.4); background:linear-gradient(135deg, rgba(74,222,128,.05), var(--bg-card));">
+      <h4>🤖 Android — ready to install</h4>
+      <p class="meta">releases/al-ghirbal-v1.0-debug.apk · 4.1 MB</p>
+      <p>Download and install on any Android phone (API 23+ / Android 6.0+).</p>
+      <p style="margin-top:12px"><strong>Option A — direct from GitHub:</strong></p>
+      <pre class="code" style="font-size:.78em"><span class="cmt"># In your terminal, with phone plugged in via USB:</span>
+<span class="fn">curl</span> -LO https://github.com/abourdim/al-ghirbal-android/raw/main/releases/al-ghirbal-v1.0-debug.apk
+<span class="fn">adb</span> install al-ghirbal-v1.0-debug.apk</pre>
+      <p style="margin-top:12px"><strong>Option B — from the phone's browser:</strong></p>
+      <ol style="color:var(--text-dim); font-size:.92em; margin-left:18px">
+        <li>Enable <em>Developer Options</em>: Settings → About phone → tap <strong>Build number</strong> 7×.</li>
+        <li>Download the APK from the GitHub link above (tap → Download).</li>
+        <li>Open the APK from your Downloads folder. Allow "Install unknown apps" for your file manager.</li>
+        <li>Tap Install. App appears in your launcher as <strong>al-Ghirbal</strong> or <strong>الغربال</strong>.</li>
+      </ol>
+    </div>
+
+    <!-- iOS -->
+    <div class="card" style="border-color:rgba(250,204,21,.3); background:linear-gradient(135deg, rgba(250,204,21,.04), var(--bg-card));">
+      <h4>📱 iOS / iPhone — not yet published</h4>
+      <p class="meta">IPA build pending full Xcode installation</p>
+      <p>iOS builds require <a href="https://apps.apple.com/app/xcode/id497799835">Xcode</a> (~10 GB, Mac App Store) which isn't installed on the build machine yet. Once it is, the IPA will be generated via:</p>
+      <pre class="code" style="font-size:.78em">./manage.sh   <span class="cmt"># macOS → choose 2 (iPhone)</span>
+  → 5 (sync web app)
+  → 6 (open Xcode)  <span class="cmt"># Product → Archive → Distribute</span></pre>
+      <p style="margin-top:12px">Until then, the only way to run it on an iPhone is by building locally (see <a href="#ios">§12 iOS</a>) or joining the future TestFlight beta.</p>
+    </div>
+
+  </div>
+
+  <div class="kids" style="margin-top:30px">
+    <p><strong>For workshop leaders:</strong> share the GitHub link (or a QR code pointing to <code>releases/</code>) at the start of the session — kids can install while you explain the architecture. On Android this takes 30 seconds on a modern phone.</p>
+  </div>
+</section>
 
 <!-- ======================================================== OVERVIEW -->
 <section id="overview">
