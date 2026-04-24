@@ -6,7 +6,7 @@ Installable artifacts for al-Ghirbal.
 
 | File | Platform | Size | Signed | Install via |
 |---|---|---|---|---|
-| [`al-ghirbal-v1.0-debug.apk`](al-ghirbal-v1.0-debug.apk) | 🤖 Android | 4.1 MB | Debug keystore | `adb install`, sideload, or Play Store (Internal testing) |
+| [`al-ghirbal-v1.1-debug.apk`](al-ghirbal-v1.1-debug.apk) | 🤖 Android | 4.1 MB | Debug keystore | `adb install`, sideload, or Play Store (Internal testing) |
 
 ## Install on Android
 
@@ -18,13 +18,13 @@ Installable artifacts for al-Ghirbal.
 4. Approve "Allow USB debugging" prompt on phone.
 5. In your terminal:
    ```bash
-   adb install al-ghirbal-v1.0-debug.apk
+   adb install al-ghirbal-v1.1-debug.apk
    ```
 6. App appears in your launcher as "al-Ghirbal" (or "الغربال" if device locale is Arabic).
 
 ### Option B — sideload the APK file directly
 
-1. Copy `al-ghirbal-v1.0-debug.apk` to your phone via Google Drive, AirDrop-to-Android, email, or USB file transfer.
+1. Copy `al-ghirbal-v1.1-debug.apk` to your phone via Google Drive, AirDrop-to-Android, email, or USB file transfer.
 2. On your phone: open the file manager, navigate to the APK, tap it.
 3. On first install, Android will prompt "Install unknown apps" — grant permission to your file manager.
 4. Confirm install.
